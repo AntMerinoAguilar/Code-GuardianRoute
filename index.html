@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Guardian Route</h1>
+    </header>
+
+    <!-- Bouton Hamburger -->
+    <div class="menu-btn" id="menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Slide Menu -->
+    <div id="slide-menu" class="slide-menu">
+        <div class="icon-container">
+            <a href="index.html">
+                <i class='bx bx-home icon'></i>
+            </a>
+            <a href="user.html">
+                <i class='bx bx-user icon'></i>
+            </a>
+            <a href="settings.html">
+                <i class='bx bxs-cog icon'></i>
+            </a>
+        </div>
+
+        <div class="logout-icon">
+            <i class='bx bx-log-out icon'></i>
+        </div>
+    </div>
+
+    <!-- Conteneur pour la carte -->
+    <div class="map-container">
+        <img src="images/maps.png" alt="Carte de la ville" class="map-image">
+    </div>
+
+    <!-- Barre de recherche en bas -->
+    <div class="search-bar">
+        <input type="text" placeholder="Rechercher une rue..." id="search-input">
+        <button class="search-button" title="search">
+            <i class='bx bx-search searchIcon'></i>
+        </button>
+    </div>
+
+    <script src="javascript/frontend.js"></script>
+    <script src="javascript/api.js"></script>
+</body>
+</html>
