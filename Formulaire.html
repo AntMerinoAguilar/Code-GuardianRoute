@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire Mobile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mobile-form-container">
+    <!-- Orange Logo -->
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Orange Logo">
+    </div>
+    
+    <h1>Formulaire d'inscription</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+      </div>
+
+      <div class="form-group">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="+33 6 12 34 56 78" required>
+      </div>
+
+      <div class="form-group">
+        <label for="enfants">Nombres d'enfants :</label>
+        <input type="number" id="enfants" name="enfants" min="0" placeholder="0" required>
+      </div>
+
+      <button type="submit">Valider</button>
+    </form>
+  </div>
+</body>
+</html>

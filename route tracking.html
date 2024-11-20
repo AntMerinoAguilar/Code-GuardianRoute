@@ -1,0 +1,16 @@
+<div class="route-tracking">
+    <h2>Suivi du trajet</h2>
+    <form id="route-form">
+        <label for="start-address">Adresse de départ :</label>
+        <input type="text" id="start-address" name="start-address" required>
+        
+        <label for="end-address">Adresse de destination :</label>
+        <input type="text" id="end-address" name="end-address" required>
+        
+        <button type="button" onclick="visualizeRoute()">Visualiser</button>
+        <button type="button" onclick="resetForm()">Recommencer</button>
+        <button type="submit">Enregistrer la zone</button>
+    </form>
+    
+    <div id="map"></div> <!-- Carte Google Maps -->
+</div>
