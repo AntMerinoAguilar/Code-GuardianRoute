@@ -1,0 +1,41 @@
+1. Page de connexion, si nous avons pas de compte,
+ on doit avoir un bouton pour se créer un compte
+2. Page d'inscription 
+3. Une fois connecté, on doit pouvoir créer un Home 
+Introduction : 
+    "Bienvenue sur Guardian Route
+    Guardian Route est une application dédiée
+    à la sécurité de vos enfants. Grâce à la localisation de la carte SIM,
+    vous pouvez suivre leurs déplacements en temps réel,
+    recevoir des notifications s'ils quittent une zone définie,
+    et être alerté en cas de comportements inhabituels.
+    Votre tranquillité d'esprit, à portée de main."
+
+    Ajouter un appareil : 
+    (on doit afficher l'enfant enregistre)
+    + (pour ajouter d'autre enfant)
+    + (commencer un trajet)
+
+4. Page d'enregistrement de l'enfant
+    Nom de l'appareil : 
+    n° de téléphone : 
+    (+- 18 ans?):
+    (menu déroulant, liens familiaux)
+    Enregistrer 
+    
+
+    Une fois que je clique sur commencer un trajet, on a une nouvelle page qui s'affiche,
+    on nous demande quel enfant souhaitons nous suivre.
+    Sur cette page, nous avons une carte google maps qui s'affiche, avec 2 input d'adresse.
+    Une fois qu'on tape les adresses, On clique sur visualiser
+    Si c'est pas ok, on clique sur recommencer
+    si c'est ok, on clique sur Enregistrer la zone.
+
+5. Une fois enregistrer, on revient sur la page Home (point 3).
+
+6. Pour aller à l'historique de l'enfant, on va avoir un bouton dans le menu, une fois qu'on clique dessus
+on choisi l'enfant, et on a son historique.
+
+
+
+
