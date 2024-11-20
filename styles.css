@@ -43,12 +43,18 @@ header h1 {
     z-index: 3;
 }
 
+
+
 .menu-btn .bar {
     width: 23px;
     height: 3.5px;
-    background-color: #333;
+    background-color: #ffffff;
     margin: 2.2px 0;
     transition: all 0.3s ease;
+}
+
+.bar {
+   background-color: white;
 }
 
 /* Menu Latéral */
@@ -60,7 +66,7 @@ header h1 {
     height: 100%;
     background-color: #333;
     transition: left 0.3s ease-in-out;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,7 +210,7 @@ header h1 {
   font-family: "Google Sans",Roboto,Arial,sans-serif;
   font-size: 14px;
   font-weight: 500;
-  height: 28px;
+  height: 22px;
   justify-content: center;
   letter-spacing: .25px;
   line-height: normal;
@@ -256,4 +262,30 @@ header h1 {
 
 .button-17:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+/* ------------------------------------------------------------------- */
+
+input {
+    margin-left: 25px;
+	font-size: 16px;
+    height: 23px;
+	padding: 5px 10px;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #C4D1EB;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+	transition: .3s ease;
+}
+
+input:focus {
+	background: #F2F2F2;
+	border: 1px solid #5A7EC7;
+	border-radius: 10px;
+}
+
+input::placeholder {
+	color: #DDDDDD;
 }
