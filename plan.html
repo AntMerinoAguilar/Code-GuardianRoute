@@ -44,11 +44,6 @@
         </div>
     </div>
 
-    <!-- Conteneur pour la carte -->
-    <div class="map-container">
-        <div id="map"></div>
-    </div>
-
     <!-- Barre de recherche destination -->
     <form class="itineraire">
         <div class="itineraire-input group">
@@ -59,8 +54,15 @@
             <label for="end">Arriver : </label>
             <input type="text" id="end"/>
         </div>
-        <button class="button-17" onclick="startTracking()">Démarrer le suivi</button>
+        <div class="btn">
+            <button class="button-17" onclick="startTracking()">Démarrer le suivi</button>
+        </div>
     </form>
+
+    <!-- Conteneur pour la carte -->
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
 
     <!-- script JS -->
     <script src="javascript/frontend.js"></script>
