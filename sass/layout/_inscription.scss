@@ -2,7 +2,6 @@
 
 .mobile-form-container {
     background: #c2cefc7d;
-    /* background: linear-gradient(135deg, #4a90e2, #d9e6f6); */
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -51,7 +50,7 @@
         }
     }
 
-    a {
+    .container-signup {
         text-decoration: none;
         display: flex;
         align-items: center;
@@ -62,7 +61,7 @@
             display: block;
             width: 50%;
             padding: 0.6rem;
-            font-size: 1rem;
+            font-size: 1.3rem;
             border-radius: 15px;
             border: none;
             cursor: pointer;

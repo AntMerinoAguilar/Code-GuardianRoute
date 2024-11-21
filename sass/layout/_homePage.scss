@@ -11,14 +11,13 @@
     border-radius: 15px;
     background: #c2cefc7d;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    /* background: linear-gradient(135deg, #4a90e2, #d9e6f6);
-    box-shadow:  -6px 6px 12px #4a91e269,
-                6px -6px 12px #d9e6f65f; */
-    padding: 15px;
-    margin: 20px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
 
     h1 {
         text-align: center;
+        color: #4622e8;
     }
 
     .introduction {
@@ -26,11 +25,20 @@
         flex-direction: column;
         gap: 10px;
         @include flexMid;
-        
+        margin-bottom: 30px;
 
         p {
             padding: 20px;
             text-align: justify;
+        }
+
+        .parag-slogan {
+            text-align: center;
+            font-size: 18px;
+            color: #01072c;
+            font-weight: 500;
+            text-shadow: 1px 1px 1px rgba(44, 60, 233, 0.432), 0 0 1em rgba(63, 63, 206, 0.201), 0 0 0.2em rgba(63, 63, 224, 0.312);
+            letter-spacing: 1.3px;
         }
     }
 
@@ -39,15 +47,41 @@
         flex-direction: column;
         gap: 10px;
         @include flexMid;
+        margin-bottom: 40px;
+
+        h2 {
+            color: #2e39ceba;
+            margin-bottom: 15px;
+        }
 
         .ajouter {
             height: 40px;
-            width: 30px; 
+            width: 30px;
+            margin-bottom: 2px;
+            font-size: 28px;
         }
 
         hr {
             width: 200px;
             color: rgba(40, 143, 233, 0.532);
         }
+    }
+
+    .kidCreated{
+        display: none;
+
+        hr {
+            width: 200px;
+            color: rgba(40, 143, 233, 0.532);
+        }
+
+        .kidLogo{
+            font-size: 15px;
+        }
+    }
+    
+
+    .commencerTrajet {
+        margin-bottom: 10px;
     }
 }

@@ -56,27 +56,33 @@
           Grâce à la localisation de la carte SIM, vous pouvez suivre leurs
           déplacements en temps réel, recevoir des notifications s'ils quittent
           une zone définie, et être alerté en cas de comportements inhabituels.
-          Votre tranquillité d'esprit, à portée de main.
         </p>
+        <p class="parag-slogan">Votre tranquillité d'esprit, à portée de main.</p>
       </div>
+
       <div class="ajouterAppareil">
         <h2>Ajouter un appareil</h2>
         <hr>
-        <a href="user.html">
-          <button class="ajouter button-itinéraire">+</button>
-        </a>
+          <button class="ajouter button-itinéraire" onclick="location.href='user.html';">+</button>
         <hr>
       </div>
+
+      <div class="kidCreated">
+        <hr>
+        <p class="kidLogo">&#129490;</p>
+        <p class="nameKidCreated"></p>
+        <hr>
+      </div>
+
       <div class="commencerTrajet">
-        <a href="plan.html">
-          <button class="start button-itinéraire">Commencer un trajet</button>
-        </a>
+          <button class="start button-itinéraire" onclick="location.href='plan.html';">Commencer un trajet</button>
       </div>
     </div>
 
     <!-- script JS -->
     <script src="../javascript/frontend.js"></script>
     <script src="../javascript/api.js"></script>
+    <script src="../javascript/index.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYW6s5kf_9tGQMxRnHE7NDgvR8Vd-eIhI"
       async
