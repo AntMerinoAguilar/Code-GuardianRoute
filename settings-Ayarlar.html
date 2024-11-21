@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings Page</title>
+
+  <!-- link de Font-awesome ca il faut mettre pour l'icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- style  -->
+  
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #4a90e2, #d9e6f6);
+      color: #333;
+    }
+
+    
+
+    .settings-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .settings-header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #555;
+    }
+
+    .setting-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+      flex-wrap: nowrap;
+    }
+
+    .setting-item:last-child {
+      border-bottom: none;
+    }
+
+    .setting-item:hover {
+      background-color: #f1f1f1;
+    }
+
+    .setting-item i {
+      margin-right: 15px;
+      font-size: 18px;
+      color: #3f3d3b;
+    }
+
+    .setting-item div {
+      flex-grow: 1;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .setting-item button {
+      background: none;
+      border: none;
+      color: #555;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    /* Toggle Button */
+    .toggle-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3px 8px;
+      background-color: #ccc;
+      border-radius: 20px;
+      cursor: pointer;
+      width: 10px;
+      height: 2px;
+      transition: background-color 0.3s ease;
+    }
+
+    .toggle-button.active {
+      background-color: #4caf50;
+    }
+
+    .toggle-button span {
+
+      width: 16px; 
+      height: 16px; 
+      background-color: #fff;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    .toggle-button.active span {
+      transform: translateX(20px); 
+    }
+
+ 
+    .logout-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff4d4d;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.8s ease;
+    }
+
+    .logout-button:hover {
+      background-color: #e63939;
+    }
+
+    .logout-button i {
+      margin-right: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .settings-container {
+        margin: 20px;
+        padding: 15px;
+      }
+
+      .settings-header h1 {
+        font-size: 20px;
+      }
+
+      .setting-item {
+        padding: 10px 15px;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .setting-item span {
+        margin-bottom: 0;
+      }
+
+      .setting-item button {
+        margin-left: auto;
+      }
+
+      .logout-button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="settings-container">
+    <div class="settings-header">
+      <h1>Settings</h1>
+    </div>
+    <div class="setting-item">
+      <i class="fas fa-moon"></i>
+      <div>Dark Mode</div>
+      <div class="toggle-button" onclick="toggleDarkMode()">
+        <span></span>
+      </div>
+    </div>
+    <div class="setting-item">
+      <i class="fas fa-globe"></i>
+      <span>Language</span>
+      <button>English</button>
+    </div>
+    <div class="setting-item">
+      <i class="fas fa-bell"></i>
+      <span>Notifications</span>
+      <button>On</button>
+    </div>
+    <div class="setting-item">
+      <i class="fas fa-key"></i>
+      <span>Change Password</span>
+    </div>
+    <div class="setting-item">
+      <i class="fas fa-trash-alt"></i>
+      <span>Delete Account</span>
+    </div>
+
+    <button class="logout-button">
+      <i class="fas fa-sign-out-alt"></i> Logout
+    </button>
+  </div>
+
+
+</body>
+</html>
