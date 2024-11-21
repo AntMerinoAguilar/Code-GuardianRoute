@@ -426,9 +426,11 @@ header h1 {
   align-items: center;
   gap: 10px;
   border-radius: 15px;
-  /* background: #c2cefc7d; */
-  background: linear-gradient(135deg, #4a90e2, #d9e6f6);
-  box-shadow: -6px 6px 12px rgba(74, 145, 226, 0.4117647059), 6px -6px 12px rgba(217, 230, 246, 0.3725490196);
+  background: rgba(194, 206, 252, 0.4901960784);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  /* background: linear-gradient(135deg, #4a90e2, #d9e6f6);
+  box-shadow:  -6px 6px 12px #4a91e269,
+              6px -6px 12px #d9e6f65f; */
   padding: 15px;
   margin: 20px;
 }
