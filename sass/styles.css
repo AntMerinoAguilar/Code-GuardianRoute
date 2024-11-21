@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+
 /* Assombrissement de overlay lorsque le menu est ouvert */
 .overlay {
   position: fixed;
@@ -310,3 +314,45 @@ header h1 {
 .RegistrationContainer .enregistrement .enregistrerEnfant:active {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: -6px 6px 12px #dedede, 6px -6px 12px #ffffff;
+  padding: 15px;
+  margin: 20px;
+}
+.homeContainer h1 {
+  text-align: center;
+}
+.homeContainer .introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.homeContainer .introduction p {
+  padding: 20px;
+  text-align: justify;
+}
+.homeContainer .ajouterAppareil {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.homeContainer .ajouterAppareil .ajouter {
+  height: 40px;
+  width: 30px;
+}
+.homeContainer .ajouterAppareil hr {
+  width: 200px;
+  color: aliceblue;
+}/*# sourceMappingURL=styles.css.map */
