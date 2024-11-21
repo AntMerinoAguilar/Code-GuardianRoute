@@ -54,13 +54,10 @@
     <!-- Enregistrement d'un appareil -->
     <div class="RegistrationContainer">
       <div class="phoneImgContainer">
-        <img class="phoneImg" src="../images/smartphone.jpg" alt="smartphone" />
+        <p class="phoneLogo">&#128241;</p>      
       </div>
       <div class="enregistrement">
         <label for="nom">Nom de l'enfant :</label>
-        <input type="text" id="nom" name="nom" class="inputKidDevice" />
-
-        <label for="nom">Nom de l'appareil :</label>
         <input type="text" id="nom" name="nom" class="inputKidDevice" />
 
         <label for="phone">Numéro de téléphone :</label>
@@ -69,11 +66,12 @@
         <label for="age">Âge de l'enfant :</label>
         <input type="number" id="age" name="age" class="inputKidDevice" />
 
-        <button type="button" class="enregistrerEnfant" onclick="location.href='index.html';">Enregistrer l'enfant</button>
+        <button type="button" class="enregistrerEnfant">Enregistrer l'enfant</button>
       </div>
     </div>
 
     <script src="../javascript/frontend.js"></script>
     <script src="../javascript/api.js"></script>
+    <script src="../javascript/user.js"></script>
   </body>
 </html>

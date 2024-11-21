@@ -45,9 +45,18 @@
             width: 30px; 
         }
 
-        hr {
-            width: 200px;
-            color: rgba(40, 143, 233, 0.532);
-        }
     }
+}
+
+hr {
+    width: 200px;
+    color: rgba(40, 143, 233, 0.532);
+}
+
+.kidCreated{
+    display: none;
+}
+
+.kidLogo{
+    font-size: 15px;
 }

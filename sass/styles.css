@@ -246,34 +246,30 @@ header h1 {
 }
 
 .RegistrationContainer {
-  width: 100%;
-  height: 90%;
+  font-family: "Raleway", sans-serif;
+  width: 90%;
+  height: 65%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f7f7f7;
+  background: rgba(194, 206, 252, 0.4901960784);
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .RegistrationContainer .phoneImgContainer {
   display: flex;
   justify-content: center;
-  background-color: white;
   width: 100%;
-  padding: 10px 0;
 }
-.RegistrationContainer .phoneImgContainer .phoneImg {
-  width: 60px;
-  height: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.RegistrationContainer .phoneImgContainer .phoneLogo {
+  font-size: 50px;
 }
 .RegistrationContainer .enregistrement {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  background-color: white;
   width: 100%;
   height: auto;
   padding: 30px 20px;
@@ -290,8 +286,8 @@ header h1 {
   height: 40px;
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #ddd;
-  border-radius: 5px;
+  border: 0.8px solid #ccc;
+  border-radius: 15px;
   margin-bottom: 15px;
   transition: border-color 0.3s ease;
 }
@@ -300,14 +296,14 @@ header h1 {
   outline: none;
 }
 .RegistrationContainer .enregistrement .enregistrerEnfant {
+  font-family: "Raleway", sans-serif;
   width: 80%;
   height: 45px;
-  background-color: rgb(70, 132, 247);
-  color: white;
+  background: #4a90e2;
   font-size: 18px;
   font-weight: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -459,9 +455,18 @@ header h1 {
   height: 40px;
   width: 30px;
 }
-.homeContainer .ajouterAppareil hr {
+
+hr {
   width: 200px;
   color: rgba(40, 143, 233, 0.532);
+}
+
+.kidCreated {
+  display: none;
+}
+
+.kidLogo {
+  font-size: 15px;
 }
 
 .mobile-form-container {
@@ -682,4 +687,4 @@ header h1 {
     font-size: 14px;
     padding: 8px 16px;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
