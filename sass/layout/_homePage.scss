@@ -1,0 +1,52 @@
+// style de la Home Page
+
+@import "../utils/mixins";
+
+.homeContainer {
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    @include flexMid;
+    gap: 10px;
+    border-radius: 15px;
+    /* background: #c2cefc7d; */
+    background: linear-gradient(135deg, #4a90e2, #d9e6f6);
+    box-shadow:  -6px 6px 12px #4a91e269,
+                6px -6px 12px #d9e6f65f;
+    padding: 15px;
+    margin: 20px;
+
+    h1 {
+        text-align: center;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @include flexMid;
+        
+
+        p {
+            padding: 20px;
+            text-align: justify;
+        }
+    }
+
+    .ajouterAppareil {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @include flexMid;
+
+        .ajouter {
+            height: 40px;
+            width: 30px; 
+        }
+
+        hr {
+            width: 200px;
+            color: rgba(40, 143, 233, 0.532);
+        }
+    }
+}

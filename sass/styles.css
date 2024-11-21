@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -139,6 +145,7 @@ body {
   height: 100vh;
   background-color: white;
   overflow: hidden;
+  background: linear-gradient(135deg, #4a90e2, #d9e6f6);
 }
 
 header {
@@ -309,4 +316,368 @@ header h1 {
 }
 .RegistrationContainer .enregistrement .enregistrerEnfant:active {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+  background: rgba(194, 206, 252, 0.4901960784);
+  /* background: linear-gradient(135deg, #4a90e2, #d9e6f6); */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+.login-container .logo-container img {
+  width: 150px;
+  margin-bottom: 2.5rem;
+  border-radius: 30px;
+}
+.login-container .message-connexion h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  letter-spacing: 1.5px;
+  color: #1321e5;
+  margin-bottom: 0.3rem;
+  line-height: 0.8;
+}
+.login-container .message-connexion h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  color: #4993ec;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+.login-container form {
+  margin-bottom: 35px;
+}
+.login-container form .form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 0.8px solid #ccc;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+.login-container form .form-group input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+.login-container form .form-group input::-moz-placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+.login-container form .form-group input::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+.login-container a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.login-container a button {
+  display: block;
+  width: 50%;
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background: #4a90e2;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+.login-container a button:hover {
+  background: #357ab8;
+}
+.login-container .links p {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  color: #024ba3;
+}
+.login-container .links p span a {
+  text-decoration: none;
+  display: block;
+  margin-left: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #0077ff;
+}
+.login-container .links p span a:hover {
+  color: #004395;
+}
+
+.homeContainer {
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  /* background: #c2cefc7d; */
+  background: linear-gradient(135deg, #4a90e2, #d9e6f6);
+  box-shadow: -6px 6px 12px rgba(74, 145, 226, 0.4117647059), 6px -6px 12px rgba(217, 230, 246, 0.3725490196);
+  padding: 15px;
+  margin: 20px;
+}
+.homeContainer h1 {
+  text-align: center;
+}
+.homeContainer .introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.homeContainer .introduction p {
+  padding: 20px;
+  text-align: justify;
+}
+.homeContainer .ajouterAppareil {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.homeContainer .ajouterAppareil .ajouter {
+  height: 40px;
+  width: 30px;
+}
+.homeContainer .ajouterAppareil hr {
+  width: 200px;
+  color: rgba(40, 143, 233, 0.532);
+}
+
+.mobile-form-container {
+  background: rgba(194, 206, 252, 0.4901960784);
+  /* background: linear-gradient(135deg, #4a90e2, #d9e6f6); */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+.mobile-form-container .logo-container img {
+  width: 150px;
+  margin-bottom: 2.5rem;
+  border-radius: 30px;
+}
+.mobile-form-container h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: #1321e5;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.mobile-form-container form {
+  margin-bottom: 30px;
+}
+.mobile-form-container form .form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 0.8px solid #ccc;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+.mobile-form-container form .form-group input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+.mobile-form-container form .form-group input::-moz-placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+.mobile-form-container form .form-group input::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+.mobile-form-container a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.mobile-form-container a button {
+  display: block;
+  width: 50%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background: #4a90e2;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+.mobile-form-container a button:hover {
+  background: #357ab8;
+}
+.mobile-form-container .links p {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  color: #024ba3;
+}
+.mobile-form-container .links p span a {
+  text-decoration: none;
+  display: block;
+  margin-left: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #0077ff;
+}
+.mobile-form-container .links p span a:hover {
+  color: #004395;
+}
+
+.settings-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.settings-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #555;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  flex-wrap: nowrap;
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+}
+
+.setting-item:hover {
+  background-color: #f1f1f1;
+}
+
+.setting-item i {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #3f3d3b;
+}
+
+.setting-item div {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.setting-item button {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Toggle Button */
+.toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 8px;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 10px;
+  height: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #4caf50;
+}
+
+.toggle-button span {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggle-button.active span {
+  transform: translateX(20px);
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.8s ease;
+}
+
+.logout-button:hover {
+  background-color: #e63939;
+}
+
+.logout-button i {
+  margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .settings-container {
+    margin: 20px;
+    padding: 15px;
+  }
+  .settings-header h1 {
+    font-size: 20px;
+  }
+  .setting-item {
+    padding: 10px 15px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .setting-item span {
+    margin-bottom: 0;
+  }
+  .setting-item button {
+    margin-left: auto;
+  }
+  .logout-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }

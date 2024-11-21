@@ -1,57 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../sass/styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-
+    <link rel="stylesheet" href="../sass/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="overlay"></div>
 
     <header>
-        <h1>Guardian Route</h1>
+      <h1>Guardian Route</h1>
     </header>
-
-    <h2>settings page</h2>
 
     <!-- Bouton Hamburger -->
     <div class="menu-btn" id="menu-btn">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
 
     <!-- Slide Menu -->
     <div id="slide-menu" class="slide-menu">
-        <div class="icon-container">
-          <a href="index.html" title="lien">
-            <i class="bx bx-home icon"></i>
-          </a>
-          <a href="user.html" title="lien">
-            <i class="bx bx-user icon"></i>
-          </a>
-          <a href="family.html" title="lien">
-            <i class="bx bx-group icon"></i>
-          </a>
-          <a href="settings.html" title="lien">
-            <i class="bx bxs-cog icon"></i>
-          </a>
-          <a href="plan.html" title="lien">
-            <i class="bx bx-map icon"></i>
-          </a>
-        </div>
-  
-        <div class="logout-icon">
-          <a href="connexion.html" title="lien">
-            <i class="bx bx-log-out icon"></i>
-          </a>
+      <div class="icon-container">
+        <a href="index.html" title="lien">
+          <i class="bx bx-home icon"></i>
+        </a>
+        <a href="user.html" title="lien">
+          <i class="bx bx-user icon"></i>
+        </a>
+        <a href="family.html" title="lien">
+          <i class="bx bx-group icon"></i>
+        </a>
+        <a href="settings.html" title="lien">
+          <i class="bx bxs-cog icon"></i>
+        </a>
+        <a href="plan.html" title="lien">
+          <i class="bx bx-map icon"></i>
+        </a>
+      </div>
+
+      <div class="logout-icon">
+        <a href="connexion.html" title="lien">
+          <i class="bx bx-log-out icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- settings -->
+    <div class="settings-container">
+      <div class="settings-header">
+        <h1>Settings</h1>
+      </div>
+      <div class="setting-item">
+        <i class="fas fa-moon"></i>
+        <div>Dark Mode</div>
+        <div class="toggle-button" onclick="toggleDarkMode()">
+          <span></span>
         </div>
       </div>
+      <div class="setting-item">
+        <i class="fas fa-globe"></i>
+        <span>Language</span>
+        <button>English</button>
+      </div>
+      <div class="setting-item">
+        <i class="fas fa-bell"></i>
+        <span>Notifications</span>
+        <button>On</button>
+      </div>
+      <div class="setting-item">
+        <i class="fas fa-key"></i>
+        <span>Change Password</span>
+      </div>
+      <div class="setting-item">
+        <i class="fas fa-trash-alt"></i>
+        <span>Delete Account</span>
+      </div>
+
+      <button class="logout-button">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </button>
+    </div>
 
     <script src="../javascript/frontend.js"></script>
     <script src="../javascript/api.js"></script>
-</body>
+  </body>
 </html>

@@ -8,71 +8,62 @@
   </head>
   <body>
     <div class="mobile-form-container">
-      <!-- Orange Logo -->
+
+      <!-- Logo -->
       <div class="logo-container">
         <img src="../images/logo.png" alt="Logo" />
       </div>
 
-      <h1>Formulaire d'inscription</h1>
+      <h2>Formulaire d'inscription</h2>
+
       <form action="#" method="post">
         <div class="form-group">
-          <label for="nom">Nom :</label>
           <input
             type="text"
             id="nom"
             name="nom"
-            placeholder="Votre nom"
+            placeholder="Nom"
             required
           />
         </div>
 
         <div class="form-group">
-          <label for="prenom">Prénom :</label>
           <input
             type="text"
             id="prenom"
             name="prenom"
-            placeholder="Votre prénom"
+            placeholder="Prénom"
             required
           />
         </div>
 
         <div class="form-group">
-          <label for="email">Email :</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="Votre email"
+            placeholder="Email"
             required
           />
         </div>
 
         <div class="form-group">
-          <label for="telephone">Téléphone :</label>
           <input
-            type="tel"
-            id="telephone"
-            name="telephone"
-            placeholder="+33 6 12 34 56 78"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Mot de passe"
             required
           />
         </div>
-
-        <div class="form-group">
-          <label for="enfants">Nombres d'enfants :</label>
-          <input
-            type="number"
-            id="enfants"
-            name="enfants"
-            min="0"
-            placeholder="0"
-            required
-          />
-        </div>
-
-        <a href="index.html" title="lien"><button type="button">Valider</button></a>
       </form>
+
+      <a href="index.html" title="lien"><button type="button">Sign up</button></a>
+
+      <!-- Additional Links -->
+      <div class="links">
+        <p>Already have an account ? <span><a href="connexion.html">Log in</a></span></p>
+      </div>
     </div>
   </body>
 </html>

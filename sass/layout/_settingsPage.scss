@@ -1,0 +1,135 @@
+.settings-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .settings-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #555;
+  }
+
+  .setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    flex-wrap: nowrap;
+  }
+
+  .setting-item:last-child {
+    border-bottom: none;
+  }
+
+  .setting-item:hover {
+    background-color: #f1f1f1;
+  }
+
+  .setting-item i {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #3f3d3b;
+  }
+
+  .setting-item div {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .setting-item button {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  /* Toggle Button */
+  .toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 8px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 10px;
+    height: 2px;
+    transition: background-color 0.3s ease;
+  }
+
+  .toggle-button.active {
+    background-color: #4caf50;
+  }
+
+  .toggle-button span {
+
+    width: 16px; 
+    height: 16px; 
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+
+  .toggle-button.active span {
+    transform: translateX(20px); 
+  }
+
+
+  .logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+  }
+
+  .logout-button:hover {
+    background-color: #e63939;
+  }
+
+  .logout-button i {
+    margin-right: 10px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .settings-container {
+      margin: 20px;
+      padding: 15px;
+    }
+
+    .settings-header h1 {
+      font-size: 20px;
+    }
+
+    .setting-item {
+      padding: 10px 15px;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .setting-item span {
+      margin-bottom: 0;
+    }
+
+    .setting-item button {
+      margin-left: auto;
+    }
+
+    .logout-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }

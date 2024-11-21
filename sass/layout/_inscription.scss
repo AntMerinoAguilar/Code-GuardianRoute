@@ -1,6 +1,6 @@
-// Style de la page de connexion
+// Style de la page d'inscription
 
-.login-container {
+.mobile-form-container {
     background: #c2cefc7d;
     /* background: linear-gradient(135deg, #4a90e2, #d9e6f6); */
     padding: 2rem;
@@ -18,28 +18,16 @@
         }
     }
 
-    .message-connexion {        
-        h1 {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700;
-            font-size: 5rem;
-            letter-spacing: 1.5px;
-            color: #1321e5;
-            margin-bottom: .3rem;
-            line-height: 0.8;
-        }
-    
-        h2 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 1.2rem;
-            color: #4993ec;
-            margin-bottom: 2.5rem;
-            line-height: 1.5;
-        }
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5rem;
+        color: #1321e5;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
     }
 
     form {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
         .form-group {
             input {
                 width: 100%;
@@ -73,8 +61,8 @@
         button {
             display: block;
             width: 50%;
-            padding: 0.8rem;
-            font-size: 1.3rem;
+            padding: 0.6rem;
+            font-size: 1rem;
             border-radius: 15px;
             border: none;
             cursor: pointer;
@@ -94,7 +82,7 @@
         p {
             display: flex;
             font-family: 'Raleway', sans-serif;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #024ba3;
 
             span {
