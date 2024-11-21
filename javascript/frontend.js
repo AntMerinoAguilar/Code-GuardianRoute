@@ -1,3 +1,4 @@
+/* --- front pour le slide menu et l'overlay --- */
 const menuBtn = document.querySelector('.menu-btn');
 const sideMenu = document.querySelector('.slide-menu');
 const overlay = document.querySelector(".overlay");

@@ -1,0 +1,312 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Assombrissement de overlay lorsque le menu est ouvert */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(135, 135, 135, 0.501);
+  z-index: 1;
+  display: none;
+}
+.overlay.active {
+  display: block;
+}
+
+/* Bouton Hamburger */
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  cursor: pointer;
+  z-index: 3;
+}
+.menu-btn .bar {
+  width: 23px;
+  height: 3.5px;
+  background-color: #333;
+  margin: 2.2px 0;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+/* btn barre de recherche plan */
+.button-itinéraire {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 25px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+}
+.button-itinéraire:hover {
+  background: #f6f9fe;
+  color: #174ea6;
+}
+.button-itinéraire:active {
+  box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.3), 0 8px 12px 6px rgba(60, 64, 67, 0.15);
+  outline: none;
+}
+.button-itinéraire:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+.button-itinéraire:disabled {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+.button-itinéraire:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+.button-itinéraire:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
+}
+.button-itinéraire:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0, rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+.button-itinéraire:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0, rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
+}
+
+/* icônes du haut */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.icon-container .icon {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.icon-container .icon:hover {
+  transform: scale(1.2);
+  color: rgb(70, 132, 247);
+}
+
+/* icône de déconnexion */
+.logout-icon .icon {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.logout-icon .icon:hover {
+  transform: scale(1.2);
+  color: rgb(253, 72, 72);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  background-color: rgb(130, 174, 255);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+  color: aliceblue;
+  letter-spacing: px;
+}
+
+.slide-menu {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease-in-out;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 40px;
+}
+.slide-menu.open {
+  left: 0;
+}
+
+.search-itinéraire {
+  position: fixed;
+  display: flex;
+  margin-top: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px 0 15px;
+}
+.search-itinéraire .group-itinéraire {
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.search-itinéraire .group-itinéraire .input-itinéraire {
+  margin-left: 25px;
+  font-size: 16px;
+  height: 23px;
+  padding: 5px 10px;
+  outline: none;
+  background: #FFFFFF;
+  color: #000000;
+  border: 1px solid #C4D1EB;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 0px #E2E2E2;
+  transition: 0.3s ease;
+}
+.search-itinéraire .group-itinéraire .input-itinéraire:focus {
+  background: #f2f2f2;
+  border: 1px solid #5a7ec7;
+  border-radius: 10px;
+}
+.search-itinéraire .group-itinéraire .input-itinéraire::-moz-placeholder {
+  color: #dddddd;
+}
+.search-itinéraire .group-itinéraire .input-itinéraire::placeholder {
+  color: #dddddd;
+}
+.search-itinéraire .section-btn-itinéraire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-container {
+  flex: 1;
+  display: flex;
+  height: 100vh;
+  padding-top: 150px;
+}
+.map-container #map {
+  width: 100%;
+  height: 100%;
+}
+
+.RegistrationContainer {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.RegistrationContainer .phoneImgContainer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  padding: 10px 0;
+}
+.RegistrationContainer .phoneImgContainer .phoneImg {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.RegistrationContainer .enregistrement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.RegistrationContainer .enregistrement label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+.RegistrationContainer .enregistrement .inputKidDevice {
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+.RegistrationContainer .enregistrement .inputKidDevice:focus {
+  border-color: rgb(70, 132, 247);
+  outline: none;
+}
+.RegistrationContainer .enregistrement .enregistrerEnfant {
+  width: 80%;
+  height: 45px;
+  background-color: rgb(70, 132, 247);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.RegistrationContainer .enregistrement .enregistrerEnfant:hover {
+  background-color: #1563f5;
+}
+.RegistrationContainer .enregistrement .enregistrerEnfant:active {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

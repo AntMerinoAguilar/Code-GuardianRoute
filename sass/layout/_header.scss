@@ -1,0 +1,21 @@
+// En-tête
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: rgb(130, 174, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        color: aliceblue;
+        letter-spacing: px;
+    }
+}

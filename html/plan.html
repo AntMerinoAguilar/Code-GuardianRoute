@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../sass/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Guardian Route</h1>
+    </header>
+
+    <!-- Bouton Hamburger -->
+    <div class="menu-btn" id="menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Slide Menu -->
+    <div id="slide-menu" class="slide-menu">
+        <div class="icon-container">
+          <a href="index.html" title="lien">
+            <i class="bx bx-home icon"></i>
+          </a>
+          <a href="user.html" title="lien">
+            <i class="bx bx-user icon"></i>
+          </a>
+          <a href="family.html" title="lien">
+            <i class="bx bx-group icon"></i>
+          </a>
+          <a href="settings.html" title="lien">
+            <i class="bx bxs-cog icon"></i>
+          </a>
+          <a href="plan.html" title="lien">
+            <i class="bx bx-map icon"></i>
+          </a>
+        </div>
+  
+        <div class="logout-icon">
+          <a href="connexion.html" title="lien">
+            <i class="bx bx-log-out icon"></i>
+          </a>
+        </div>
+      </div>
+
+    <!-- Conteneur pour la carte -->
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+
+    <!-- Barre de recherche destination -->
+    <form class="search-itinéraire">
+        <div class="group-itinéraire">
+            <label for="start">Départ : </label>
+            <input type="text" id="start" class="input-itinéraire"/>
+        </div>
+        <div class="group-itinéraire">
+            <label for="end">Arrivée : </label>
+            <input type="text" id="end" class="input-itinéraire"/>
+        </div>
+        <div class="section-btn-itinéraire">
+          <button type="button" class="button-itinéraire" onclick="startTracking()">Démarrer le suivi</button>
+        </div>
+    </form>
+
+    <!-- script JS -->
+    <script src="../javascript/frontend.js"></script>
+    <!-- <script src="javascript/api.js"></script> -->
+    <script src="../javascript/plan.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYW6s5kf_9tGQMxRnHE7NDgvR8Vd-eIhI" async defer></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKcTPewYqDgk9rgf2w-r0cPFiPJ7KDAs0&libraries=geometry,places" async defer></script>
+</body>
+</html>

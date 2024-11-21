@@ -1,0 +1,21 @@
+// Slide menu
+
+.slide-menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease-in-out;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 40px;
+
+    &.open {
+        left: 0; // Animation pour l'ouverture du menu
+    }
+}

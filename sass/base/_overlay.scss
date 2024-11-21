@@ -1,0 +1,16 @@
+/* Assombrissement de overlay lorsque le menu est ouvert */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(135, 135, 135, 0.501);
+    z-index: 1;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}

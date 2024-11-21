@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../sass/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <header>
+      <h1>Guardian Route</h1>
+    </header>
+
+    <!-- Bouton Hamburger -->
+    <div class="menu-btn" id="menu-btn">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- Slide Menu -->
+    <div id="slide-menu" class="slide-menu">
+      <div class="icon-container">
+        <a href="index.html" title="lien">
+          <i class="bx bx-home icon"></i>
+        </a>
+        <a href="user.html" title="lien">
+          <i class="bx bx-user icon"></i>
+        </a>
+        <a href="family.html" title="lien">
+          <i class="bx bx-group icon"></i>
+        </a>
+        <a href="settings.html" title="lien">
+          <i class="bx bxs-cog icon"></i>
+        </a>
+        <a href="plan.html" title="lien">
+          <i class="bx bx-map icon"></i>
+        </a>
+      </div>
+
+      <div class="logout-icon">
+        <a href="connexion.html" title="lien">
+          <i class="bx bx-log-out icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Enregistrement d'un appareil -->
+    <div class="RegistrationContainer">
+      <div class="phoneImgContainer">
+        <img class="phoneImg" src="../images/smartphone.jpg" alt="smartphone" />
+      </div>
+      <div class="enregistrement">
+        <label for="nom">Nom de l'enfant :</label>
+        <input type="text" id="nom" name="nom" class="inputKidDevice" />
+
+        <label for="nom">Nom de l'appareil :</label>
+        <input type="text" id="nom" name="nom" class="inputKidDevice" />
+
+        <label for="phone">Numéro de téléphone :</label>
+        <input type="tel" id="phone" name="phone" class="inputKidDevice" />
+
+        <label for="age">Âge de l'enfant :</label>
+        <input type="number" id="age" name="age" class="inputKidDevice" />
+
+        <button type="button" class="enregistrerEnfant">Enregistrer l'enfant</button>
+      </div>
+    </div>
+
+    <script src="../javascript/frontend.js"></script>
+    <script src="../javascript/api.js"></script>
+  </body>
+</html>

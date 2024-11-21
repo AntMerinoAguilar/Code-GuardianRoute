@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../sass/styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <header>
+      <h1>Guardian Route</h1>
+    </header>
+
+    <!-- Bouton Hamburger -->
+    <div class="menu-btn" id="menu-btn">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- Slide Menu -->
+    <div id="slide-menu" class="slide-menu">
+      <div class="icon-container">
+        <a href="index.html" title="lien">
+          <i class="bx bx-home icon"></i>
+        </a>
+        <a href="user.html" title="lien">
+          <i class="bx bx-user icon"></i>
+        </a>
+        <a href="family.html" title="lien">
+          <i class="bx bx-group icon"></i>
+        </a>
+        <a href="settings.html" title="lien">
+          <i class="bx bxs-cog icon"></i>
+        </a>
+        <a href="plan.html" title="lien">
+          <i class="bx bx-map icon"></i>
+        </a>
+      </div>
+
+      <div class="logout-icon">
+        <a href="connexion.html" title="lien">
+          <i class="bx bx-log-out icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="introduction">
+      <h1>Bienvenue sur Guardian Route</h1>
+      <p>
+        Guardian Route est une application dédiée à la sécurité de vos enfants.
+        Grâce à la localisation de la carte SIM, vous pouvez suivre leurs
+        déplacements en temps réel, recevoir des notifications s'ils quittent
+        une zone définie, et être alerté en cas de comportements inhabituels.
+        Votre tranquillité d'esprit, à portée de main.
+      </p>
+    </div>
+    <div class="ajouterAppareil">
+      <h2>Ajouter un appareil</h2>
+      <button class="ajouter">+</button>
+    </div>
+    <div class="commencerTrajet">
+      <button class="start">Commencer un trajet</button>
+    </div>
+
+    <!-- script JS -->
+    <script src="../javascript/frontend.js"></script>
+    <script src="../javascript/api.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYW6s5kf_9tGQMxRnHE7NDgvR8Vd-eIhI"
+      async
+      defer
+    ></script>
+  </body>
+</html>

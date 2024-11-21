@@ -1,0 +1,85 @@
+// Pour rajouter des appareils à suivre quand on clique sur "+" dans le Home Page
+
+// Styles pour le conteneur principal
+.RegistrationContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $secondary-color; // Fond légèrement gris
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    // Conteneur de l'image
+    .phoneImgContainer {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        padding: 10px 0;
+
+        .phoneImg {
+            width: 60px; // Taille plus grande pour mieux ressortir
+            height: 60px;
+            object-fit: cover; // Ajuste l'image sans la déformer
+        }
+    }
+
+    // Formulaire d'enregistrement
+    .enregistrement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        padding: 30px 20px; // Ajout de padding pour plus d'espace autour des éléments
+        border-radius: 10px;
+    
+        label {
+            font-size: 16px;
+            font-weight: 600;
+            color: $text-color;
+            margin-bottom: 5px; // Espacement entre le label et le champ
+        }
+    
+        .inputKidDevice {
+            width: 80%;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid $input-border-color;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+            border-color: $primary-color;
+            outline: none;
+            }
+        }
+
+        .enregistrerEnfant {
+            width: 80%;
+            height: 45px;
+            background-color: $primary-color;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+            background-color: darken($primary-color, 10%);
+            }
+
+            &:active {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
