@@ -13,7 +13,7 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
 
     h1 {
         text-align: center;
@@ -34,7 +34,7 @@
 
         .parag-slogan {
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
             color: #01072c;
             font-weight: 500;
             text-shadow: 1px 1px 1px rgba(44, 60, 233, 0.432), 0 0 1em rgba(63, 63, 206, 0.201), 0 0 0.2em rgba(63, 63, 224, 0.312);
@@ -69,6 +69,7 @@
 
     .kidCreated{
         display: none;
+        margin-bottom: 25px;
 
         hr {
             width: 200px;
@@ -76,7 +77,14 @@
         }
 
         .kidLogo{
-            font-size: 15px;
+            font-size:32px;
+            margin: 10px 0;
+        }
+
+        p {
+            font-family: "Google Sans",Roboto,Arial,sans-serif;
+            font-size: 23px;
+            margin-bottom: 10px
         }
     }
     

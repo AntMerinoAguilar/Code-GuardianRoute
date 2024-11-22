@@ -1,6 +1,16 @@
+.settings-container {
+  background: #c2cefc7d;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
 .settings-header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .settings-header h1 {
@@ -78,6 +88,9 @@
     transform: translateX(20px); 
   }
 
+  .delete {
+    margin-bottom: 40px;
+  }
 
   .logout-button {
     display: flex;

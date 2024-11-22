@@ -256,6 +256,7 @@ header h1 {
   background: rgba(194, 206, 252, 0.4901960784);
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
 }
 .RegistrationContainer .phoneImgContainer {
   display: flex;
@@ -426,7 +427,7 @@ header h1 {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
 }
 .homeContainer h1 {
   text-align: center;
@@ -446,7 +447,7 @@ header h1 {
 }
 .homeContainer .introduction .parag-slogan {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: #01072c;
   font-weight: 500;
   text-shadow: 1px 1px 1px rgba(44, 60, 233, 0.432), 0 0 1em rgba(63, 63, 206, 0.201), 0 0 0.2em rgba(63, 63, 224, 0.312);
@@ -476,13 +477,20 @@ header h1 {
 }
 .homeContainer .kidCreated {
   display: none;
+  margin-bottom: 25px;
 }
 .homeContainer .kidCreated hr {
   width: 200px;
   color: rgba(40, 143, 233, 0.532);
 }
 .homeContainer .kidCreated .kidLogo {
-  font-size: 15px;
+  font-size: 32px;
+  margin: 10px 0;
+}
+.homeContainer .kidCreated p {
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 23px;
+  margin-bottom: 10px;
 }
 .homeContainer .commencerTrajet {
   margin-bottom: 10px;
@@ -578,9 +586,19 @@ header h1 {
   color: #004395;
 }
 
+.settings-container {
+  background: rgba(194, 206, 252, 0.4901960784);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
 .settings-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .settings-header h1 {
@@ -655,6 +673,10 @@ header h1 {
 
 .toggle-button.active span {
   transform: translateX(20px);
+}
+
+.delete {
+  margin-bottom: 40px;
 }
 
 .logout-button {
